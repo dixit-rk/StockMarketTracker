@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Divider</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="top">
+                <canvas style="height:500; width:900;" id="myChart"></canvas>
+            </div>
+            <div class="bottom">
+                <canvas  style="height: 500; width: 900;" id="myChart2"></canvas>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-top">
+                <h2 class="heading">INFOSYS</h2>
+                <button id="btn1">Start/Pause</button>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Price(In Rupees)</th>
+                    </tr>
+                    <tr>
+                        <td>Current</td>
+                        <td id="curr1" style="color: black;">0</td>
+                    </tr>
+                    <tr>
+                        <td>Minimum Today</td>
+                        <td id="min1">0</td>
+                    </tr>
+                    <tr>
+                        <td>Maximum Today</td>
+                        <td id="max1">0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right-bottom">
+                <h2 class="heading">BT Group PLC</h2>
+                <button id="btn2">Start/Pause</button>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Price(In Dollars)</th>
+                    </tr>
+                    <tr>
+                        <td>Current</td>
+                        <td id="curr2" style="color: black;">0</td>
+                    </tr>
+                    <tr>
+                        <td>Minimum Today</td>
+                        <td id="min2">0</td>
+                    </tr>
+                    <tr>
+                        <td>Maximum Today</td>
+                        <td id="max2">0</td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.socket.io/4.7.4/socket.io.min.js"
+  integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.0/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0/dist/chartjs-adapter-luxon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-streaming@2.0.0/dist/chartjs-plugin-streaming.min.js"></script>
+
+<script src="chartScript.js"></script>
+<script src="socketScript.js"></script>
+  </html>
+</html>

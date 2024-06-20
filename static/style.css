@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    width: 900px; /* Width of the left part */
+    background-color: lavender; /* Light purple color */
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    flex-grow: 1;
+    background-color: skyblue; /* Sky blue color */
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    height: 50%; /* Half of the container height */
+    overflow: hidden; /* Hide overflow */
+}
+
+.bottom {
+    height: 50%; /* Half of the container height */
+    background-color: lightyellow; /* Light yellow color */
+    overflow: hidden; /* Hide overflow */
+}
+
+.right-top {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-bottom {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-color: lightcoral; /* Light orange color */
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    background-color: #f2f2f2; /* Background color for all cells */
+}
+
+th {
+    font-weight: bold;
+    color: #333;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+canvas {
+    max-width: 100%; /* Ensure canvas doesn't overflow */
+}
